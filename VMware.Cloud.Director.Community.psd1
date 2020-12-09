@@ -12,13 +12,13 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '0.1'
+ModuleVersion = '0.1.2'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
 
 # ID used to uniquely identify this module
-GUID = '6faab641-cd69-4ded-946a-d6b9faf4b61b'
+GUID = 'fb0ccdb9-c362-4de2-84b1-948871de6eb8'
 
 # Author of this module
 Author = 'Adrian Begg'

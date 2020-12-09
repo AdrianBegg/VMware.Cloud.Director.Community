@@ -12,7 +12,7 @@ $colPublicFunctions = ($colPublicFunctionFiles | Where-Object {$_.Extension -eq 
 
 $manifest = @{
     Path              = "$BasePath\VMware.Cloud.Director.Community.psd1"
-    ModuleVersion     = '0.1'
+    ModuleVersion     = '0.1.2'
     Author            = 'Adrian Begg'
     Copyright         = '2020 Adrian Begg. All rights reserved.'
     Description       = 'Yet another community PowerShell modules to expose REST API functions for VMware Cloud Director 10.X functions as PowerShell cmdlets.'

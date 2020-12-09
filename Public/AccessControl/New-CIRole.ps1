@@ -39,7 +39,7 @@ function New-CIRole(){
     Test-CIServerConnection | Out-Null
 
     # Check if the role already exists
-    $Role = Get-CIRole -Name $Name
+    $Role = Get-CIRolev2 -Name $Name
     if($Role.Count -ne 0){
         throw "A Role with the provided parameters already exists. Please check the provided parameters and try again."
     } else {
@@ -68,7 +68,7 @@ function New-CIRole(){
         if($PSBoundParameters.ContainsKey('Rights')){
             $RoleObject = Set-CIRoleRights -Id $Response.id -Rights $Rights
         } else {
-            $RoleObject = Get-CIRole -Id $Response.id
+            $RoleObject = Get-CIRolev2 -Id $Response.id
         }
     }
     return $RoleObject

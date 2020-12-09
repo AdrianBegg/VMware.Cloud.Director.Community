@@ -36,9 +36,9 @@ function Remove-CIRole(){
 
     # Check if the Role exists
     if($PSBoundParameters.ContainsKey('Name')){
-        $Role = Get-CIRole -Name $Name
+        $Role = Get-CIRolev2 -Name $Name
     } elseif($PSBoundParameters.ContainsKey('Id')){
-        $Role = Get-CIRole -Id $Id
+        $Role = Get-CIRolev2 -Id $Id
     }
     if($Role.Count -eq 0){
         throw "A Role with the provided parameters does not exist. Please check the provided parameters and try again."

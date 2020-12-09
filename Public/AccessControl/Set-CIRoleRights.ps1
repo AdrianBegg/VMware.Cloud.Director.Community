@@ -34,9 +34,9 @@ function Set-CIRoleRights(){
 
     # Check if the Role exsits
     if($PSBoundParameters.ContainsKey('Id')){
-        $Role = Get-CIRole -Id $Id
+        $Role = Get-CIRolev2 -Id $Id
     } elseif($PSBoundParameters.ContainsKey('Name')){
-        $Role = Get-CIRole -Name $Name
+        $Role = Get-CIRolev2 -Name $Name
     }
     if($Role.Count -eq 0){
         throw "A Role with the provided parameters does not exist. Please check the provided parameters and try again."
@@ -54,6 +54,6 @@ function Set-CIRoleRights(){
         }
         # Make the API call and return the result
         $Response = (Invoke-CICloudAPIRequest @RequestParameters).JSONData
-        return (Get-CIRole -Id $Role.id -IncludeRights)
+        return (Get-CIRolev2 -Id $Role.id -IncludeRights)
     }
 }

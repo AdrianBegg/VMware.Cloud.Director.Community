@@ -1,4 +1,4 @@
-function Get-CIRole(){
+function Get-CIRolev2(){
     <#
     .SYNOPSIS
     Gets the Roles for the currently connected Cloud Director Organisation.
@@ -13,19 +13,19 @@ function Get-CIRole(){
     Optionally the Role Id. If no Role exists with this Id is returned.
 
     .EXAMPLE
-    Get-CIRole
+    Get-CIRolev2
     Returns all of the Cloud Director Roles
 
     .EXAMPLE
-    Get-CIRole -Name "System Adminsitrator"
+    Get-CIRolev2 -Name "System Adminsitrator"
     Returns the Cloud Director role with the name "System Administrator"
 
     .EXAMPLE
-    Get-CIRole -Id urn:vcloud:role:67e119b7-083b-349e-8dfd-6cf0c19b83cf
+    Get-CIRolev2 -Id urn:vcloud:role:67e119b7-083b-349e-8dfd-6cf0c19b83cf
     Returns the Cloud Director role with the Id "urn:vcloud:role:67e119b7-083b-349e-8dfd-6cf0c19b83cf"
 
     .EXAMPLE
-    Get-CIRole -Name "System Adminsitrator" -IncludeRights
+    Get-CIRolev2 -Name "System Adminsitrator" -IncludeRights
     Returns the Cloud Director role with the name "System Administrator" including all rights.
 
     AUTHOR: Adrian Begg

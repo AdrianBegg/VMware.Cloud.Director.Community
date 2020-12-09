@@ -18,7 +18,7 @@ ModuleVersion = '0.1'
 CompatiblePSEditions = 'Desktop', 'Core'
 
 # ID used to uniquely identify this module
-GUID = '2e18e719-41c0-4339-916e-ee1ea217cbee'
+GUID = '6faab641-cd69-4ded-946a-d6b9faf4b61b'
 
 # Author of this module
 Author = 'Adrian Begg'
@@ -72,7 +72,7 @@ NestedModules = @('Private\Get-WinHttpProxy.ps1',
                'Public\AccessControl\Get-CIRights.ps1', 
                'Public\AccessControl\Get-CIRightsBundle.ps1', 
                'Public\AccessControl\Get-CIRightsCategory.ps1', 
-               'Public\AccessControl\Get-CIRole.ps1', 
+               'Public\AccessControl\Get-CIRolev2.ps1', 
                'Public\AccessControl\New-CIRightsBundle.ps1', 
                'Public\AccessControl\New-CIRole.ps1', 
                'Public\AccessControl\New-CISAMLGroup.ps1', 
@@ -118,7 +118,7 @@ NestedModules = @('Private\Get-WinHttpProxy.ps1',
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Get-CIRights', 'Get-CIRightsBundle', 'Get-CIRightsCategory', 
-               'Get-CIRole', 'New-CIRightsBundle', 'New-CIRole', 'New-CISAMLGroup', 
+               'Get-CIRolev2', 'New-CIRightsBundle', 'New-CIRole', 'New-CISAMLGroup', 
                'New-CIUser', 'Remove-CIRole', 'Set-CIRightsBundleRights', 
                'Set-CIRoleRights', 'Get-CIAuditTrail', 'Set-CIEmailSettings', 
                'Set-CIPasswordPolicy', 'Set-CISystemSettings', 'Get-CIBrandingIcon', 

@@ -1,4 +1,4 @@
-# VMware.Cloud.Director.Community
+# VMware.CloudDirector.Community
 Yet another community PowerShell modules to expose REST API functions for VMware Cloud Director 10.X functions as PowerShell cmdlets.
 
 This module fills several functional gaps for Cloud Director in the current implementation of PowerCLI particularly with the newer /cloudapi endpoint.

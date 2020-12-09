@@ -23,7 +23,7 @@ Adrian Begg (@AdrianBegg)
 * Get-CIRights : Get a list of Cloud Director Rights visible to the logged in user.
 * Get-CIRightsBundle : Returns a collection of Cloud Director Rights Bundles.
 * Get-CIRightsCategory : Get a list of Cloud Director Rights Categories visible to the logged in user.
-* Get-CIRole : Gets the Roles for the currently connected Cloud Director Organization.
+* Get-CIRolev2 : Gets the Roles for the currently connected Cloud Director Organization (using CloudAPI)
 * New-CIRightsBundle : Creates a new Rights Bundle in the currently connected Cloud Director instance.
 * New-CIRole : Creates a new role on the currently connected Cloud Director Organization.
 * New-CISAMLGroup : Adds a new SAML Group to the Cloud Director RBAC and assigns the group the provided Role

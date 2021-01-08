@@ -114,7 +114,7 @@ function Invoke-CICloudAPIRequest(){
         }
     }
     # Check if the Certificate Check should be performed and add the argument if not
-    if((Get-PowerCLIConfiguration -Scope "User" | Select-Object InvalidCertificateAction).InvalidCertificateAction -eq "Ignore") {
+    if((Get-PowerCLIConfiguration -Scope "AllUsers" | Select-Object InvalidCertificateAction).InvalidCertificateAction -eq "Ignore") {
         $HashInvokeArguments.Add("SkipCertificateCheck",$true)
     }
 

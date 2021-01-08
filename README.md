@@ -86,5 +86,8 @@ Adrian Begg (@AdrianBegg)
 All of the cmdlets in the module **should** have well described PowerShell help available (some work is needed here). For detailed help including examples please use `Get-help <cmdlet> -Detailed` (e.g. `Get-help Get-CIRights -Detailed`).
 
 ### Change Log
+**v0.1.2 - Minor fix (8th January 2021)**
+* Adjusted check in private function Invoke-CICloudAPIRequest to check "AllUsers" scope (instead of User scope) for the InvalidCertificateAction for better behavior in automation (pipelines)
+
 **v0.1 - Initial release (9th December 2020)**
 * Initial public release

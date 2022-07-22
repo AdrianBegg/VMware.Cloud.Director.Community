@@ -56,7 +56,7 @@ function New-CIPVDC(){
         [Parameter(Mandatory=$False)]
             [ValidateNotNullorEmpty()] [String] $ResourcePoolName,
         [Parameter(Mandatory=$False)]
-            [ValidateNotNullorEmpty()] [ValidateSet("vmx-07","vmx-08","vmx-09","vmx-10","vmx-11","vmx-12","vmx-13","vmx-14","vmx-15","vmx-17")] $HardwareVersion = "vmx-17",
+            [ValidateNotNullorEmpty()] [ValidateSet("vmx-07","vmx-08","vmx-09","vmx-10","vmx-11","vmx-12","vmx-13","vmx-14","vmx-15","vmx-17","vmx-18","vmx-19")] $HardwareVersion = "vmx-17",
         [Parameter(Mandatory=$True)]
             [ValidateNotNullorEmpty()] [string[]] $StoragePolicies,
         [Parameter(Mandatory=$True)]
